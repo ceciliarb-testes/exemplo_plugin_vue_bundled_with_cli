@@ -1,29 +1,25 @@
-# plugin_teste
-
-## Project setup
+# exemplo_plugin_vue_bundled_with_cli
+Exemplo de plugin Vuejs empacotado utilizando o próprio `vue-cli-service`
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+vue-cli-service build --target lib --name plugin_teste_2 ./src/index.js
 ```
 
-### Compiles and minifies for production
+## Manutenção e melhorias do plugin
 ```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
+git clone https://github.com/ceciliarb-testes/exemplo_plugin_vue_bundled_with_cli.git
+cd exemplo_plugin_vue_bundled_with_cli
+npm i
+npm run build-bundle
+npm login
+npm version [major|minor|patch]
+npm publish --access publis
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Uso do plugin
+```
+npm i plugin_teste_2
+```
+Disponível em https://www.npmjs.com/package/plugin_teste_2
+
+## Exemplo de uso
+https://github.com/ceciliarb-testes/exemplo_app_usando_custom_plugin
