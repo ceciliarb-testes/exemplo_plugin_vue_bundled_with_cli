@@ -12,7 +12,7 @@ npm i
 npm run build-bundle
 npm login
 npm version [major|minor|patch]
-npm publish --access publis
+npm publish --access public
 ```
 
 ## Uso do plugin
