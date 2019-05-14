@@ -1,14 +1,21 @@
 {
-  "name": "plugin_teste",
-  "version": "0.1.0",
-  "private": true,
+  "name": "plugin_teste_2",
+  "version": "2.0.0",
+  "main": "./dist/plugin_teste_2.umd.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build-bundle": "vue-cli-service build --target lib --name plugin_teste_2 ./src/index.js"
   },
+  "files": [
+    "dist/*",
+    "src/plugins/plugin_de_teste/*"
+  ],
   "dependencies": {
     "core-js": "^2.6.5",
+    "moment": "^2.24.0",
+    "plugin_teste": "^1.0.0",
     "vue": "^2.6.10"
   },
   "devDependencies": {
